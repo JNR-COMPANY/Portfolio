@@ -1,0 +1,47 @@
+<form (submit)="sendEmail($event)"   [formGroup]="formContact" #formDir="ngForm" id="form"  class="form" >
+    <div class="form__row">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>    
+        <input required="" formControlName="nome" placeholder="Nome" type="text">
+        <div *ngIf="name.invalid && formDir.submitted"  class="error">
+            <p *ngIf="name.errors?.['required']" >Nome é obrigatório</p>
+        </div>
+        </div>
+    <div class="form__row">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 6L12 13L2 6" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+        <input formControlName="email"  id="email" placeholder="E-mail" type="text">
+    </div>
+    <div class="form__row">
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.3691 2H7.36914C6.26457 2 5.36914 2.89543 5.36914 4V20C5.36914 21.1046 6.26457 22 7.36914 22H17.3691C18.4737 22 19.3691 21.1046 19.3691 20V4C19.3691 2.89543 18.4737 2 17.3691 2Z" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.3691 18H12.3791" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+        <input id="phone" placeholder="Telefone" formControlName="phone" type="text">
+        <div *ngIf="phone.invalid && formDir.submitted"  class="error">
+            <p *ngIf="phone.errors?.['required']" >Telefone é obrigatório</p>
+        </div>
+    </div>
+    <div class="form__row textarea" >
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.3652 2H6.36523C5.8348 2 5.32609 2.21071 4.95102 2.58579C4.57595 2.96086 4.36523 3.46957 4.36523 4V20C4.36523 20.5304 4.57595 21.0391 4.95102 21.4142C5.32609 21.7893 5.8348 22 6.36523 22H18.3652C18.8957 22 19.4044 21.7893 19.7794 21.4142C20.1545 21.0391 20.3652 20.5304 20.3652 20V8L14.3652 2Z" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.3652 2V8H20.3652" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16.3652 13H8.36523" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16.3652 17H8.36523" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.3652 9H9.36523H8.36523" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+        <textarea id="message" placeholder="Sua ideia" formControlName="message" name="" id="" cols="30" rows="6"></textarea>
+        <div *ngIf="message.invalid && formDir.submitted"  class="error">
+            <p *ngIf="message.errors?.['required']" >Sua ideia é obrigatória</p>
+        </div>
+    </div>
+
+    <button  class="button-submitt" type="submit">{{textoBotao}}</button>
+</form>

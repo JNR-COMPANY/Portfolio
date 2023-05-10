@@ -1,0 +1,46 @@
+body{
+    overflow: hidden;
+}
+
+
+.loader {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(139,0,0,1) 42%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in all;
+  opacity: 1;
+  pointer-events: all;
+  overflow: hidden;
+  &.finish{
+    pointer-events: none;
+    // width: 0;
+    opacity: 0;
+    transition: 0.3s ease-in all;
+  }
+
+  .image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+    &.finish{
+        display: none;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+}

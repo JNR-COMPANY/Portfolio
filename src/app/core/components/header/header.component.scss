@@ -1,0 +1,65 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 0.5rem 3rem 0 3rem;
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 1;
+    scroll-behavior: smooth;
+
+    &__left{
+
+        .image{
+            width: fit-content;
+            height: 100px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &__right{
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            .link{
+                text-decoration: none;
+                color: #fff;
+                li{
+                    cursor: pointer; 
+                    position: relative;
+                    font-family: 'Inter';
+                    font-size: 0.8rem;
+                    strong{
+                        font-family: 'Play';
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        border-bottom: 1px solid #fff;
+                        transition: 0.3s ease-in all;
+                        left: 0;
+                        bottom: -0.5rem;
+                    }
+                    &:hover{
+                            color: #CCCCCC;
+                            transition: 0.3s ease-in all;
+                        &::after{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

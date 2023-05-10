@@ -1,0 +1,63 @@
+.form{
+    width: 100%;
+    padding: 5rem;
+    position: relative;
+    &__row{
+        width: 100%;
+        border-bottom: 2px solid gray;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &.textarea{
+            align-items: normal;
+        }
+        input, textarea{
+            background-color: transparent;
+            width: 100%;
+            padding: 1rem;
+            font-family: 'Play';
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+        textarea{
+            padding: 0 1rem;
+            resize: none;
+            svg{
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .error{
+            color: red;
+            position: absolute;
+            bottom: -2rem;
+            font-size: 10px;
+
+        }
+    }
+
+    button{
+        position: absolute;
+        right: 5rem;
+        bottom: 1rem;
+        background-color: transparent;
+        border-radius: 30px;
+        border: 2px solid gray;
+        padding: 1rem 4rem;
+        font-family: 'Play';
+        font-weight: bold;
+        font-size: 15px;
+        color: gray;
+        cursor: pointer;
+        transition: 0.3s ease all;
+        &:hover{
+            background-color: gray;
+            color: white;
+            transition: 0.3s ease all;
+
+        }
+    }
+    
+}   

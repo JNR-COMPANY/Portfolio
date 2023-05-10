@@ -1,0 +1,173 @@
+<div class="home">
+    <div id="secao-1" class="home__banner">
+       <div [@fadeIn] [@slideInFromBottom] class="home__banner__content">
+            <div class="title mb-1">Ola meu nome é <strong>João</strong></div>
+            <div class="title-big mb-1"> Construindo <strong>projetos</strong>  para <strong>web</strong></div>
+            <div class="desc">
+                Bem-vindo ao meu portfólio de desenvolvedor web! Aqui você encontrará uma seleção dos projetos nos quais trabalhei ao longo da minha carreira. Sou apaixonado por criar soluções web inovadoras e funcionais que atendam às necessidades dos meus clientes.
+                
+                </div>
+       </div>    
+       <div class="home__banner__socials">
+            <a class="face" href="">
+                <svg width="10" height="17" viewBox="0 0 10 17" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.59888 0.492188H7.17756C6.10727 0.492188 5.08081 0.917358 4.324 1.67417C3.56719 2.43098 3.14202 3.45743 3.14202 4.52772V6.94904H0.720703V10.1775H3.14202V16.6343H6.37045V10.1775H8.79177L9.59888 6.94904H6.37045V4.52772C6.37045 4.31366 6.45548 4.10837 6.60685 3.95701C6.75821 3.80565 6.9635 3.72061 7.17756 3.72061H9.59888V0.492188Z" fill="    "/>
+                </svg>    
+            </a>
+            <a class="linkedin" href="">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.1952 14.2745H0.235784V4.74415H3.1952V14.2745ZM1.7139 3.44412C0.767573 3.44412 0 2.66028 0 1.71394C6.77338e-09 1.25937 0.180571 0.823425 0.501989 0.502C0.823407 0.180575 1.25934 0 1.7139 0C2.16845 0 2.60439 0.180575 2.92581 0.502C3.24722 0.823425 3.42779 1.25937 3.42779 1.71394C3.42779 2.66028 2.6599 3.44412 1.7139 3.44412ZM14.2713 14.2745H11.3183V9.63519C11.3183 8.52953 11.296 7.1116 9.77963 7.1116C8.24098 7.1116 8.0052 8.31286 8.0052 9.55553V14.2745H5.04897V4.74415H7.8873V6.04418H7.92872C8.32382 5.29539 9.28895 4.50517 10.7288 4.50517C13.7239 4.50517 14.2745 6.47752 14.2745 9.03934V14.2745H14.2713Z" fill="#fff"/>
+                </svg>         
+            </a>
+            <a class="insta" href="">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1401_368)">
+                    <path d="M14.132 2.49219H6.06092C3.83216 2.49219 2.02539 4.29896 2.02539 6.52772V14.5988C2.02539 16.8275 3.83216 18.6343 6.06092 18.6343H14.132C16.3608 18.6343 18.1675 16.8275 18.1675 14.5988V6.52772C18.1675 4.29896 16.3608 2.49219 14.132 2.49219Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.3248 10.0547C13.4244 10.7264 13.3096 11.4124 12.9969 12.0152C12.6841 12.6179 12.1893 13.1067 11.5827 13.412C10.9762 13.7173 10.2888 13.8235 9.61836 13.7157C8.94793 13.6078 8.32859 13.2912 7.84842 12.8111C7.36825 12.3309 7.05172 11.7116 6.94384 11.0411C6.83596 10.3707 6.94222 9.68332 7.24752 9.07677C7.55282 8.47021 8.0416 7.97536 8.64434 7.66261C9.24709 7.34986 9.93311 7.23512 10.6048 7.33473C11.29 7.43633 11.9243 7.7556 12.4141 8.24539C12.9039 8.73518 13.2232 9.36951 13.3248 10.0547Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.5356 6.12402H14.5444" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+            </a>
+       </div> 
+       <div class="email">{{textEmail}}</div> 
+       <div [ngClass]="{'active' : line}" class="line"></div>
+       <div id="scroll-down-animation">
+            <span class="mouse">
+            <span class="move"></span>
+            </span>
+      </div>
+    </div>
+
+    <div id="about" class="home__about">
+        <div class="title">PROJETOS JÁ PRODUZIDOS</div>
+               <div class="grid">
+                    <a target="blank" href="https://www.rar.ind.br/spaccio-rar" class="item rar">
+                        <img src="assets/rar-site.png" alt="">
+                    </a>
+                    <a target="blank" href="https://www.kaferchurrasqueiras.com.br/" class="item kafer">
+                        <img src="assets/kafer-site.png" alt="">
+                    </a>
+                    <div class="item mestre">
+                        <img src="assets/mestre-site.png" alt="">
+
+                    </div>
+                    <a target="_blank" href="https://lp.gscontadores.com.br/" class="item">
+                        <img src="assets/gs-site.png" alt="">
+                    </a>
+                    <a target="blank" href="https://www.agorasoumae.com.br/" class="item">
+                        <img src="assets/asm.png" alt="">
+                    </a>
+                    <a target="blank" href="https://tds.com.br/" class="item">
+                        <img src="assets/tds.png" alt="">
+                    </a>
+               </div>
+    </div>
+
+    <div id="secao-3"  class="home__banner-2">
+        <div class="title">HABILIDADES</div>
+        <div class="grid">
+            <div class="item">
+                <div class="up">
+                    <img src="assets/angular.png" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="title">Angular</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="up">
+                    <img src="assets/html-5.jpg" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="title">Html</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="up">
+                    <img src="assets/css.jpg" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="title">Css</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="up">
+                    <img src="assets/js.jpg" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="title">JavaScript</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="up">
+                    <img src="assets/laaravel.png" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="title">Laravel</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="up">
+                    <img src="assets/php.png" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="title">Php</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="secao-4" class="home__form">
+        <div class="home__form__left">
+            <img src="assets/form2.png" alt="">
+            
+        </div>
+        <div class="home__form__right">
+            <div class="title">FALE COM A GENTE, CONTE SOBRE O SEU PROJETO</div>
+            <div class="title-absolute">CONTATO</div>
+            <app-form></app-form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__up">
+          <div class="image">
+            <img src="assets/logo.png" alt="" />
+          </div>
+          <div class="list">
+            <ul>
+              <li>
+                    <a href="">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.6877 2.85211C14.852 1.01204 12.4074 0 9.80934 0C4.44684 0 0.0832414 4.3636 0.0832414 9.7261C0.0832414 11.4391 0.530116 13.1127 1.38006 14.5892L0 19.6275L5.15659 18.2737C6.57607 19.0491 8.17518 19.4566 9.80496 19.4566H9.80934C15.1675 19.4566 19.6275 15.093 19.6275 9.73048C19.6275 7.13248 18.5234 4.69219 16.6877 2.85211ZM9.80934 17.818C8.35481 17.818 6.93094 17.4281 5.69108 16.6921L5.39755 16.5168L2.33952 17.3186L3.15441 14.335L2.96164 14.0284C2.15113 12.7403 1.72616 11.2551 1.72616 9.7261C1.72616 5.2705 5.35374 1.64292 9.81373 1.64292C11.9736 1.64292 14.0021 2.4841 15.5267 4.01311C17.0513 5.54213 17.9889 7.57059 17.9845 9.73048C17.9845 14.1905 14.2649 17.818 9.80934 17.818ZM14.243 11.7633C14.0021 11.6407 12.806 11.0536 12.5826 10.9747C12.3592 10.8915 12.1971 10.8521 12.035 11.0974C11.8729 11.3427 11.4085 11.886 11.2639 12.0525C11.1237 12.2146 10.9791 12.2365 10.7381 12.1138C9.3099 11.3997 8.37233 10.8389 7.43039 9.22227C7.18067 8.79292 7.68012 8.82359 8.14452 7.89479C8.22338 7.73269 8.18395 7.59249 8.12261 7.46982C8.06127 7.34715 7.57497 6.1511 7.37344 5.6648C7.17629 5.19164 6.97475 5.25735 6.8258 5.24859C6.6856 5.23983 6.5235 5.23983 6.3614 5.23983C6.1993 5.23983 5.93643 5.30116 5.71299 5.54213C5.48955 5.78747 4.86305 6.37454 4.86305 7.57059C4.86305 8.76664 5.7349 9.92325 5.85319 10.0854C5.97586 10.2475 7.56621 12.7009 10.0065 13.7567C11.5487 14.4227 12.1532 14.4796 12.9243 14.3657C13.3931 14.2956 14.3613 13.7786 14.5629 13.2091C14.7644 12.6396 14.7644 12.1532 14.7031 12.0525C14.6461 11.943 14.484 11.8816 14.243 11.7633Z" fill="#fff"/>
+                        </svg>
+                        (54) 99114-6726    
+                    </a>
+              </li>
+        
+              <li>
+                <a href="">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 8C3 7.06812 3 6.60218 3.15224 6.23463C3.35523 5.74458 3.74458 5.35523 4.23463 5.15224C4.60218 5 5.06812 5 6 5V5H18V5C18.9319 5 19.3978 5 19.7654 5.15224C20.2554 5.35523 20.6448 5.74458 20.8478 6.23463C21 6.60218 21 7.06812 21 8V16C21 16.9319 21 17.3978 20.8478 17.7654C20.6448 18.2554 20.2554 18.6448 19.7654 18.8478C19.3978 19 18.9319 19 18 19V19H6V19C5.06812 19 4.60218 19 4.23463 18.8478C3.74458 18.6448 3.35523 18.2554 3.15224 17.7654C3 17.3978 3 16.9319 3 16V8Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"></path> <path d="M4 6L10.683 11.8476C11.437 12.5074 12.563 12.5074 13.317 11.8476L20 6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    joao_rigo@outlook.com   
+                </a>
+          </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__down">
+            <div class="">Coopyright © JNR Developer</div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/991146726" class="whats-fixed">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#6ADD4D"/>
+            <path d="M27.4337 12.5242C26.467 11.5478 25.3155 10.7736 24.0465 10.2467C22.7774 9.71994 21.4162 9.45109 20.0422 9.45587C14.285 9.45587 9.59284 14.148 9.59284 19.9052C9.59284 21.7504 10.0779 23.5429 10.9847 25.1246L9.50848 30.5443L15.0442 29.0892C16.5731 29.9222 18.2918 30.3651 20.0422 30.3651C25.7993 30.3651 30.4915 25.6729 30.4915 19.9157C30.4915 17.1215 29.4054 14.496 27.4337 12.5242ZM20.0422 28.5936C18.4816 28.5936 16.9527 28.1719 15.6136 27.381L15.2973 27.1912L12.0075 28.0559L12.8826 24.8504L12.6717 24.5236C11.8047 23.1391 11.3444 21.5387 11.3432 19.9052C11.3432 15.1181 15.2445 11.2168 20.0316 11.2168C22.3513 11.2168 24.534 12.1236 26.1683 13.7685C26.9776 14.574 27.6189 15.5321 28.0551 16.5874C28.4913 17.6426 28.7138 18.7739 28.7095 19.9157C28.7306 24.7028 24.8292 28.5936 20.0422 28.5936ZM24.8081 22.0984C24.5445 21.9719 23.2581 21.3392 23.0262 21.2443C22.7837 21.16 22.6149 21.1178 22.4357 21.3708C22.2564 21.6344 21.7609 22.2249 21.6132 22.3936C21.4656 22.5729 21.3075 22.594 21.0439 22.4569C20.7803 22.3304 19.9367 22.0457 18.9456 21.16C18.1653 20.464 17.6486 19.61 17.4905 19.3463C17.3428 19.0827 17.4694 18.9457 17.6064 18.8086C17.7224 18.6926 17.87 18.5028 17.9966 18.3552C18.1231 18.2076 18.1758 18.0916 18.2602 17.9229C18.3445 17.7436 18.3024 17.596 18.2391 17.4695C18.1758 17.3429 17.6486 16.0566 17.4377 15.5293C17.2269 15.0232 17.0054 15.0865 16.8473 15.0759H16.3411C16.1619 15.0759 15.8877 15.1392 15.6452 15.4028C15.4132 15.6664 14.7384 16.2991 14.7384 17.5855C14.7384 18.8719 15.6769 20.1161 15.8034 20.2848C15.9299 20.464 17.6486 23.1001 20.2636 24.2283C20.8857 24.5025 21.3707 24.6606 21.7503 24.7766C22.3724 24.977 22.9418 24.9453 23.3952 24.8821C23.9013 24.8083 24.9452 24.2494 25.1561 23.6378C25.3775 23.0263 25.3775 22.5096 25.3037 22.3936C25.2299 22.2776 25.0717 22.2249 24.8081 22.0984Z" fill="white"/>
+        </svg>    
+    </a>
+
+        
+</div>
+
+
